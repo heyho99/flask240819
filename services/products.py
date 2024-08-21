@@ -77,7 +77,7 @@ def get_products(current_user_id):
 
 
 
-with open('/var/www/micro_app/users.json', 'r') as f:
+with open('users.json', 'r') as f:
     users = json.load(f)
 @app.route('/auth', methods=['POST'])
 def authenticate_user():
